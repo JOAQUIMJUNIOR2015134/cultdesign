@@ -1,0 +1,34 @@
+/* CardImagens Component Styles */
+.card-imagens {
+  width: 320px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.card-imagens-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Hover effect removed for static cards */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-imagens {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-imagens {
+    width: 180px;
+    height: 252px;
+  }
+}

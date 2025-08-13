@@ -1,0 +1,310 @@
+/* Home Page Styles */
+.home-page {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* White Mode (Default) */
+.home-page.white-mode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark Mode */
+.home-page.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Mode Toggle Button */
+.mode-toggle-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.mode-toggle-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mode-toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Container */
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Portfolio Sections */
+.card-imagens-section {
+  margin-bottom: 4rem;
+}
+
+.card-imagens-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Images Container */
+.card-imagens-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100vw;
+  padding: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-imagens-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+  }
+
+  .card-imagens-section h2 {
+    font-size: 2rem;
+  }
+
+  .content-container h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-imagens-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100vw;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+  }
+
+  .card-imagens-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-container h1 {
+    font-size: 2rem;
+  }
+}
+
+.content-container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+/* Demo Content */
+.demo-content {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.demo-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.demo-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+/* Demo Cards */
+.demo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.demo-card {
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* White Mode Cards */
+.white-mode .demo-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #333;
+}
+
+.white-mode .demo-card:hover {
+  background: #e9ecef;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Cards */
+.dark-mode .demo-card {
+  background: #2d2d2d;
+  border: 2px solid #404040;
+  color: #ffffff;
+}
+
+.dark-mode .demo-card:hover {
+  background: #404040;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.demo-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.demo-card p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Features Section Styling for both modes */
+.features-section {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.white-mode .features-section {
+  background-color: #f8f9fa;
+}
+
+.dark-mode .features-section {
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CardImagens Demo Section */
+.card-imagens-demo {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem 0;
+}
+
+.card-imagens-demo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-imagens-demo > p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.card-imagens-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mode-toggle-container {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .mode-toggle-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .content-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .demo-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .demo-card {
+    padding: 1.5rem;
+  }
+
+  .card-imagens-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-imagens-demo {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container h1 {
+    font-size: 2rem;
+  }
+
+  .demo-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-imagens-demo h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-imagens-demo {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+  }
+}

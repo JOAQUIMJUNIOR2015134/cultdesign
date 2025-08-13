@@ -1,0 +1,215 @@
+/* ButtonGrid Component Styles */
+.button-grid-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.button-grid-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button-grid-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid-button {
+  background: white;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.grid-button:active {
+  transform: translateY(-1px);
+}
+
+/* Button Variants */
+.grid-button.primary {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.grid-button.primary:hover {
+  background: #667eea;
+  color: white;
+}
+
+.grid-button.secondary {
+  border-color: #764ba2;
+  color: #764ba2;
+}
+
+.grid-button.secondary:hover {
+  background: #764ba2;
+  color: white;
+}
+
+.grid-button.success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.grid-button.success:hover {
+  background: #28a745;
+  color: white;
+}
+
+.grid-button.warning {
+  border-color: #ffc107;
+  color: #856404;
+}
+
+.grid-button.warning:hover {
+  background: #ffc107;
+  color: #856404;
+}
+
+.grid-button.danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.grid-button.danger:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.grid-button.info {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+.grid-button.info:hover {
+  background: #17a2b8;
+  color: white;
+}
+
+/* Button Elements */
+.button-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.button-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.button-description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Disabled State */
+.grid-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f8f9fa;
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+.grid-button.disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: #f8f9fa;
+  color: #6c757d;
+}
+
+/* Grid Layout Variations */
+.button-grid.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button-grid.three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button-grid.four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button-grid.six-columns {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .button-grid.six-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .button-grid.four-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .button-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .button-grid.six-columns,
+  .button-grid.four-columns,
+  .button-grid.three-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-button {
+    padding: 1rem;
+    min-height: 100px;
+  }
+
+  .button-icon {
+    font-size: 1.5rem;
+  }
+
+  .button-label {
+    font-size: 1rem;
+  }
+
+  .button-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-button {
+    min-height: 80px;
+  }
+}

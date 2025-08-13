@@ -1,13 +1,22 @@
-# CultdesignWebsite
+# CultDesign Portfolio Website
 
-Um website moderno construído com React + Vite para apresentar design e cultura.
+Um portfolio moderno e responsivo construído com React + Vite para apresentar trabalhos de design nas categorias: Gráfico, Interior, Exterior e Product.
+
+## ✨ Características
+
+- **Portfolio Responsivo** - Grid layout adaptável a diferentes tamanhos de tela
+- **Sistema de Filtros** - Navegação por categorias (All, Gráfico, Interior, Exterior, Product)
+- **Interface Limpa** - Design minimalista com foco no conteúdo visual
+- **Otimização de Assets** - Gestão inteligente de imagens organizadas por categoria
+- **Performance** - Carregamento rápido com Vite
 
 ## 🚀 Tecnologias
 
 - **React 18+** - Biblioteca JavaScript para construção de interfaces
-- **Vite** - Ferramenta de build rápida e moderna
+- **Vite** - Ferramenta de build rápida e moderna  
 - **JavaScript (ES6+)** - Linguagem de programação principal
-- **CSS3** - Estilização e layout responsivo
+- **CSS3** - Estilização e layout responsivo com CSS Grid
+- **Git** - Controle de versão
 
 ## 🛠️ Desenvolvimento
 
